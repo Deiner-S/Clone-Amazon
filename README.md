@@ -1,2 +1,2 @@
 # Clone-Amazon
- Projeto em Andamento 
+ Projeto de estudo( em Andamento )
