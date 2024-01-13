@@ -548,6 +548,10 @@ video {
   position: absolute;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .right-0 {
   right: 0px;
 }
@@ -556,16 +560,17 @@ video {
   top: 0px;
 }
 
-.left-0 {
-  left: 0px;
+.order-1 {
+  order: 1;
 }
 
 .order-2 {
   order: 2;
 }
 
-.order-1 {
-  order: 1;
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 .mx-2 {
@@ -573,28 +578,44 @@ video {
   margin-right: 0.5rem;
 }
 
-.mt-1 {
-  margin-top: 0.25rem;
+.-mt-1 {
+  margin-top: -0.25rem;
 }
 
 .ml-1 {
   margin-left: 0.25rem;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
+}
+
+.mr-4 {
+  margin-right: 1rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .mt-2 {
   margin-top: 0.5rem;
 }
 
-.-mt-1 {
-  margin-top: -0.25rem;
-}
-
-.ml-4 {
-  margin-left: 1rem;
+.block {
+  display: block;
 }
 
 .flex {
@@ -609,40 +630,32 @@ video {
   display: none;
 }
 
-.h-7 {
-  height: 1.75rem;
+.h-10 {
+  height: 2.5rem;
 }
 
 .h-6 {
   height: 1.5rem;
 }
 
-.h-4 {
-  height: 1rem;
-}
-
-.h-5 {
-  height: 1.25rem;
-}
-
-.w-full {
-  width: 100%;
-}
-
-.w-6 {
-  width: 1.5rem;
+.h-7 {
+  height: 1.75rem;
 }
 
 .w-4 {
   width: 1rem;
 }
 
-.w-5 {
-  width: 1.25rem;
+.w-full {
+  width: 100%;
 }
 
 .flex-grow {
   flex-grow: 1;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-wrap {
@@ -653,16 +666,12 @@ video {
   align-items: center;
 }
 
-.rounded {
-  border-radius: 0.25rem;
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .rounded-sm {
   border-radius: 0.125rem;
-}
-
-.rounded-full {
-  border-radius: 9999px;
 }
 
 .rounded-l {
@@ -694,18 +703,23 @@ video {
   border-right-width: 1px;
 }
 
+.border-darkblue-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(35 47 62 / var(--tw-border-opacity));
+}
+
 .border-gray-500 {
   --tw-border-opacity: 1;
   border-color: rgb(107 114 128 / var(--tw-border-opacity));
 }
 
-.border-gray-700 {
-  --tw-border-opacity: 1;
-  border-color: rgb(55 65 81 / var(--tw-border-opacity));
-}
-
 .border-transparent {
   border-color: transparent;
+}
+
+.bg-darkblue-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(35 47 62 / var(--tw-bg-opacity));
 }
 
 .bg-darkblue-900 {
@@ -721,21 +735,6 @@ video {
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-darkblue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(72 87 105 / var(--tw-bg-opacity));
-}
-
-.bg-darkblue-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 71 90 / var(--tw-bg-opacity));
 }
 
 .p-2 {
@@ -770,10 +769,6 @@ video {
   padding-top: 0.25rem;
 }
 
-.pb-1 {
-  padding-bottom: 0.25rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -781,16 +776,6 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
 }
 
 .text-base {
@@ -803,6 +788,16 @@ video {
   line-height: 1.25rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -811,9 +806,18 @@ video {
   line-height: .75rem;
 }
 
+.leading-tight {
+  line-height: 1.25;
+}
+
 .text-darkblue-900 {
   --tw-text-opacity: 1;
   color: rgb(25 30 38 / var(--tw-text-opacity));
+}
+
+.text-gol-200 {
+  --tw-text-opacity: 1;
+  color: rgb(250 166 58 / var(--tw-text-opacity));
 }
 
 .text-gray-700 {
@@ -824,15 +828,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-gol-200 {
-  --tw-text-opacity: 1;
-  color: rgb(250 166 58 / var(--tw-text-opacity));
-}
-
-.hover\:border:hover {
-  border-width: 1px;
 }
 
 .hover\:border-white:hover {
@@ -859,6 +854,11 @@ video {
     order: 0;
   }
 
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .md\:ml-0 {
     margin-left: 0px;
   }
@@ -879,6 +879,10 @@ video {
     display: flex;
   }
 
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:w-auto {
     width: auto;
   }
@@ -896,3 +900,4 @@ video {
     padding-bottom: 0px;
   }
 }
+
