@@ -10,4 +10,8 @@
     .terceira-barra {
         @apply hover:text-orange-650 border-b-2 border-transparent hover:border-orange-650 py-1 px-3 text-nowrap;
     }
+
+    .categoria {
+      @apply text-blue-600 underline hover:text-gol-200 border-r border-black px-1;
+  }
   }
