@@ -640,6 +640,33 @@ video {
   }
 }
 
+.link-catalogo {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
+.link-catalogo:hover {
+  --tw-text-opacity: 1;
+  color: rgb(234 88 12 / var(--tw-text-opacity));
+  text-decoration-line: underline;
+}
+
+.btn-catalogo {
+  border-radius: 0.125rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .absolute {
   position: absolute;
 }
@@ -757,14 +784,6 @@ video {
   margin-top: 1rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .block {
   display: block;
 }
@@ -815,10 +834,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-1 {
-  width: 0.25rem;
 }
 
 .flex-grow {
@@ -962,14 +977,14 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-}
-
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .p-2 {
@@ -1123,11 +1138,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-blue-600 {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
-}
-
 .line-through {
   text-decoration-line: line-through;
 }
@@ -1162,15 +1172,6 @@ video {
 .hover\:text-gol-200:hover {
   --tw-text-opacity: 1;
   color: rgb(250 166 58 / var(--tw-text-opacity));
-}
-
-.hover\:text-orange-600:hover {
-  --tw-text-opacity: 1;
-  color: rgb(234 88 12 / var(--tw-text-opacity));
-}
-
-.hover\:underline:hover {
-  text-decoration-line: underline;
 }
 
 @media (min-width: 768px) {
@@ -1223,8 +1224,8 @@ video {
     display: none;
   }
 
-  .md\:w-1\/4 {
-    width: 25%;
+  .md\:w-1\/6 {
+    width: 16.666667%;
   }
 
   .md\:w-3\/4 {
@@ -1233,14 +1234,6 @@ video {
 
   .md\:w-auto {
     width: auto;
-  }
-
-  .md\:w-1\/2 {
-    width: 50%;
-  }
-
-  .md\:w-1\/6 {
-    width: 16.666667%;
   }
 
   .md\:flex-none {

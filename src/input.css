@@ -20,4 +20,11 @@
     .categorias {
       @apply rounded-full w-full md:w-75px mb-2 mx-auto;
     }
+
+    .link-catalogo {
+      @apply text-sm text-blue-600 hover:underline hover:text-orange-600 mb-2;
+    }
+    .btn-catalogo {
+      @apply text-xs bg-gray-200 border border-gray-600 rounded-sm py-1;
+    }
   }
