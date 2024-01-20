@@ -8,7 +8,7 @@
     }
 
     .terceira-barra {
-      @apply hover:text-orange-650 border-b-2 border-transparent hover:border-orange-650 py-1 px-3 text-nowrap;
+      @apply hover:text-orange-650 border-b-2 border-transparent hover:border-orange-650 py-1 px-3  ;
     }
 
     .links {
@@ -26,5 +26,12 @@
     }
     .btn-catalogo {
       @apply text-xs bg-gray-200 border border-gray-600 rounded-sm py-1;
+    }
+
+    .footer-list {
+      @apply mb-2 text-gray-200 hover:underline leading-4;
+    }
+    .footer-pais {
+      @apply border-r border-gray-300 px-2  text-gray-200 hover:underline;
     }
   }

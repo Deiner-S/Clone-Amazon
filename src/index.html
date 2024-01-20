@@ -4,24 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clone-Amazon</title>
-    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="img/amazon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <div class="grid text-white">
-            <!-- HEADER SUPERIOR-->
+
+            <!-- 1 BARRA DE NAVEGACAO -->  
+            
             <div class="flex flex-wrap md:flex-no-wrap bg-darkblue-900 px-2 py-1 items-center">
 
+                <!--b-bar mobile-->
                 <div class="md:hidden flex flex-row  p-2 md:border border-darkblue-700 hover:border-white rounded-sm">
-                    <i class="fas fa-bars text-xl"></i>                        
+                    <i class="fas fa-bars text-xl"></i>
                 </div>
+                <!-- Logo Amazon-->
                 <div class="flex mx-2 py-2 border border-transparent hover:border-white">
                     <img src="img/amazon_logo.png" alt="Amazon" class="h-7">
                     <span class="text-xs  pl-1 pt-1">.com.br</span>
                 </div>
-                
+                <!--Endereço-->
                 <div class="hidden md:flex  items-center border border-transparent hover:border-white rounded-sm px-2 py-2 md:py-0">
                     <div class="mr-1">
                             <i class="fas fa-map-marker-alt text-xl"></i>
@@ -32,6 +36,7 @@
                         <a href="#" class=" block font-bold">Atualizar Local</a>
                     </div>
                 </div>
+                <!--Barra de pesquisa-->
                 <div class="w-full md:w-auto flex-grow md:ml-0 pt-1 order-2 md:order-none">
                     <form action="" class="flex">
                         <select name="" id="" class="hidden md:block p-2 text-xs text-gray-700 bg-gray-100 hover:bg-gray-300 rounded-tl rounded-bl border-r border-gray-500"> <Option value="">Livros</Option></select>
@@ -39,42 +44,52 @@
                         <button class="px-4 bg-gol-100 hover:bg-gol-200 rounded-tr rounded-br"><i class="fas fa-search text-darkblue-900 text-xl mt-1"></i></button>
                     </form>
                 </div>
+                <!--Login-->
                 <div class="hidden md:block ml-1  text-xs border border-transparent hover:border-white rounded-sm p-2">
                     <a href="#" class="block leading-3">Olá, Faça seu login</a>
                     <a href="#" class="block leading-3 font-bold">Contas e Listas <i class="fas fa-chevron down"></i></a>
                 </div>
+                <!--Devolucao e Pedidos-->
                 <div class="hidden md:block  text-xs border border-transparent hover:border-white rounded-sm p-2">
                     <a href="#" href="#" class="block leading-3">Devoluções</a>
                     <a href="#" class="block leading-3 font-bold">e Pedidos <i class="fas fa-chevron down"></i></a>
                 </div>
-                <div class="hidden md:block  text-xs border border-transparent hover:border-white rounded-sm p-2">
-                    <a href="#" class="block leading-3">Experimente</a>
-                    <a href="#" class="block leading-3 font-bold">Prime<i class="fas fa-chevron-down"></i></a>
-                </div>
+                <!--Carrinho-->
                 <div class="p-2 border border-transparent hover:border-white rounded-sm absolute right-0 top-0 mr-2 mt-2 md:mr-0 md:t-0 md:relative order-1 md:order-none md:flex">
                     <i class=" fas fa-shopping-cart flex  text-2xl md:mr-2"></i>
                     <span class="bold font-bold text-gol-200 text-base absolute top-0 left-0 -mt-1 ml-4 text-center w-4 h-6 bg-darkblue-900 rounded-full">0</span>
                 </div>
+
             </div>
-            <!-- Segunda Barra -->
-            <Div class="flex bg-darkblue-700 text-sm px-2 h-10  items-center">
-                <div class="hidden md:flex flex-row  p-2 md:border border-darkblue-700 hover:border-white rounded-sm">
-                    <i class="fas fa-bars text-xl"></i>
-                    <a href="#" class="font-bold mx-1">Todos</a>
-                </div>
+
+            <!-- 2 BARRA DE NAVEGACAO -->
+            
+            <div class=" bg-darkblue-700 text-sm px-2 h-10  items-center">
+                             
+                <!-- Endereço Mobile -->
                 <div class="flex items-center border border-transparent hover:border-white rounded-sm px-2 py-2 md:py-0 md:hidden">
+                    
                     <div class="mr-1">
-                            <i class="fas fa-map-marker-alt text-xl"></i>
+                        <i class="fas fa-map-marker-alt text-xl"></i>
                     </div>
                     
                     <div class="flex md:block leading-tight text-xs p-2"> 
                         <a href="#" class=" block mx-1 md:mx-0">A entrega será feita em Bela Vista 01319</a>
                         <a href="#" class=" block font-bold">Atualizar Local</a>
                     </div>
+
                 </div>
-                <div class="hidden md:block ">
+                <!-- Links -->
+                <div class="hidden md:flex">
                     <!--utilizaçao de apply-->
-                    <ul class="flex ml-6 text-sm ">
+                    <ul class="flex ml-3 text-sm flex-wrap ">
+                        <li>
+                            <!-- b-bar-desktop -->
+                            <div class="hidden md:flex flex-row p-2 md:border border-darkblue-700 hover:border-white rounded-sm">
+                                <i class="fas fa-bars text-xl"></i>
+                                <a href="#" class="font-bold mx-1">Todos</a>
+                            </div>
+                        </li>
                         <li class="segunda-barra"><a href="#" >Venda na Amazon</a></li>
                         <li class="segunda-barra"><a href="#" >Mais Vendidos</a></li>
                         <li class="segunda-barra"><a href="#" >Ofertas do Dia</a></li>
@@ -91,37 +106,40 @@
                     </ul>
                 </div>
                 
-            </div>
-            <div>
-                    <!-- Terceira Barra -->
-                <div class="flex text-black px-4 text-xs border-b border-gray-300 bg-gray-100 pt-1">
-                    <a href="#" class="block py-2 md:hidden text-xs"><i class="fas fa-chevron-left"></i>Todos os Departamentos</a>
-                        <!--utilizaçao de apply-->
-                    <ul class="hidden md:flex">
-                        
-                        <li class="terceira-barra font-bold"><a href="">Livros</a></li>
-                        <li class="terceira-barra"><a href="">Pesquisa avançada</a></li>
-                        <li class="terceira-barra"><a href="">Mais Vendidos</a></li>
-                        <li class="terceira-barra"><a href="">Pré-venda e Lançamentos</a></li>
-                        <li class="terceira-barra"><a href="">Livors em Oferta</a></li>
-                        <li class="terceira-barra"><a href="">Inglês e Outras Línguas</a></li>
-                        <li class="terceira-barra"><a href="">Loja Geek</a></li>
-                        <li class="terceira-barra"><a href="">Universitários e Acadêmicos</a></li>
-                        <li class="terceira-barra"><a href="">Didáticos e Escolares</a></li>
-                        <li class="terceira-barra"><a href="">Loja Infantil</a></li>
-                        <li class="terceira-barra"><a href="">Exclusivos</a></li>
-                        
-                        
 
-                    </ul>
-                </div>
             </div>
+
+            <!-- 3 BARRA DE NAVEGACAO -->
+
+            <div class="flex text-black px-4 text-xs border-b border-gray-300 bg-gray-100 pt-1">
+                <a href="#" class="block py-2 md:hidden text-xs"><i class="fas fa-chevron-left"></i>Todos os Departamentos</a>
+                <!--utilizaçao de apply-->
+                <ul class="hidden md:flex">
+                    
+                    <li class="terceira-barra font-bold"><a href="">Livros</a></li>
+                    <li class="terceira-barra"><a href="">Pesquisa avançada</a></li>
+                    <li class="terceira-barra"><a href="">Mais Vendidos</a></li>
+                    <li class="terceira-barra"><a href="">Pré-venda e Lançamentos</a></li>
+                    <li class="terceira-barra"><a href="">Livors em Oferta</a></li>
+                    <li class="terceira-barra"><a href="">Inglês e Outras Línguas</a></li>
+                    <li class="terceira-barra"><a href="">Loja Geek</a></li>
+                    <li class="terceira-barra"><a href="">Universitários e Acadêmicos</a></li>
+                    <li class="terceira-barra"><a href="">Didáticos e Escolares</a></li>
+                    <li class="terceira-barra"><a href="">Loja Infantil</a></li>
+                    <li class="terceira-barra"><a href="">Exclusivos</a></li>
+                    
+                    
+
+                </ul>
+            </div>
+
         </div>
+                
     </header>
     <main>
         <div class="grid grid-cols-9 ">
             <!-- BARRA LATERAL -->
-            <div class="hidden md:block flex-wrap col-span-1 border-r-2 border-gray-200 mt-4 h-screen">
+            <div class="hidden md:block flex-wrap col-span-1 border-r-2 border-gray-200 mt-4 h-screen ">
                 <h3 class="font-bold tracking-wider m-auto mx-3 text-xs">Destaques em Livros</h3>
                     <ul class="mx-3 text-xs pl-2">                    
                         <li><a href="#" class="text-gray-700 hover:text-gol-200">indicações da Amazon</a></li>
@@ -160,14 +178,14 @@
 
             </div>
             <!--CONTEUDO-->
-            <div class=" col-span-9 md:col-span-8">
+            <div class="col-span-9 md:col-span-8">
 
                 <div class="flex flex-col">
                     <!-- TITULO DA CATEGORIA -->
                     <div class="text-center">
                         <h2 class="text-2xl font-bold md:text-3xl md:font-normal mt-2">Loja de livros</h2>
                         <!-- apply links -->
-                        <ul class="flex flex-wrap md:flex-nowrap text-sm px-4 md:px-0 pb-2 justify-center mt-2">
+                        <ul class="flex flex-wrap text-sm px-4 md:px-0 pb-2 justify-center mt-2">
                             <li><a href="" class="links">Livros em Ofertas</a></li>
                             <li><a href="" class="links">Mais Vendidos</a></li>
                             <li><a href="" class="links">Lançamentos</a></li>
@@ -183,8 +201,8 @@
                         <div class="h-2 border-b shadow-md"></div>
                     </div>
                     <!--PROMOCOES E CATEGORIAS-->
-                    <div class="hidden md:block my-6">
-                        <img src="/src/img/banner_promo.jpg" alt="--Promoções">
+                    <div class="hidden md:block my-6 ">
+                        <img src="/src/img/banner_promo.jpg" alt="--Promoções" class="mx-auto">
                     </div>
                     <div class="flex flex-col md:flex-row items-center my-8 py-1">
                         <p class="font-bold md:w-3/4 text-center md:border-gray-300 leading-5 pr-2 mt-10 md:mt-0">Assine Amazon Prime para ter beneficios de leitura com o Prime Reading, frete GRATIS sem valor minimo de compra e muito mais. Apenas R$ 9,90/mês.</p>
@@ -194,7 +212,7 @@
                     <!--CATEGORIAS-->
                     <div class="flex flex-col px-6 pb-8 border-b border-gray-300">
                         <h3 class="text-center md:text-left text-xl fonto-bold mb-4">Encontre ofertas por categoria</h3>
-                        <ul class="flex flex-wrap md:flex-nowrap px-2 text-xs font-bold">
+                        <ul class="flex flex-wrap md:flex-nowrap px-2 text-xs font-bold justify-around">
                             <li class="text-center mx-3 mb-4 md:mb-0">
                                 <a href=""><img src="img/cat1.jpg" alt="Todas as Ofertas" class="categorias">
                                 <p>Todas as Ofertas</p></a>
@@ -405,6 +423,153 @@
             </div>
         </div>
     </main>
+    <footer class="flex flex-col text-white">
+        <a href="#"><div class="py-4 text-center bg-darkblue-600 hover:bg-darkblue-500 text-sm">
+            <p>Voltar ao Inicio</p>
+        </div></a>
+        <div class="flex flex-wrap md:flex-nowrap md:justify-around py-10 md:px-20 bg-darkblue-700">
+            <!-- Coll 1-->
+            <div class="w-1/2 md:w-auto md-4 md:mb-0 font-semibold">
+                <h4 class="font-bold mb-2">Conheça-nos</h4>
+                <ul class="text-xs w-3/4">
+
+                    <li class="footer-list">
+                        <a href="">Sobre a Amazon</a>
+                    </li>
+
+                    <li class="footer-list">
+                        <a href="">Informaçoes corporativas</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="">Carreiras</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="">Comunicado à imprensa</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="">Comunidade</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="">Acessibilidade</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="">Amazon Science</a>
+                    </li>                      
+
+                </ul>
+            </div>
+            <!-- Coll 2-->
+            <div class="w-1/2 md:w-auto md-4 md:mb-0 font-semibold">
+                <h4 class="font-bold mb-2">Ganhe dinheiro conosco</h4>
+                <ul class="text-xs w-3/4">
+
+                    <li class="footer-list">
+                        <a href="">Venda na Amazon</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="">Proteja e construa a sua marca</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="">Publique seus livros</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="">Seja um associado</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="">Anuncie seus produtos</a>
+                    </li>                    
+
+                </ul>
+            </div>
+            <!-- Coll 3-->
+            <div class="w-1/2 md:w-auto md-4 md:mb-0 font-semibold">
+                <h4 class="font-bold mb-2">Pagamento</h4>
+                <ul class="text-xs w-3/4">
+
+                    <li class="footer-list">
+                        <a href="">Meios de Pagamento</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="">Compre com Pontos</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="">Cartão de Crédito</a>
+                    </li>                                       
+
+                </ul>
+            </div>
+            <!-- Coll 4-->
+            <div class="w-1/2 md:w-auto md-4 md:mb-0 font-semibold">
+                <h4 class="font-bold mb-2">Deixe-nos ajudar você</h4>
+                <ul class="text-xs w-3/4">
+
+                    <li class="footer-list">
+                        <a href="">Sua conta</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="">Frete e prazo de entrega</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="">Devoluções e reembolsos</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="">Gerencie seu conteúdo e dispositivos</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="">Ajuda</a>
+                    </li>                     
+
+                </ul>
+            </div>
+
+        </div>
+        <!--FOOTER 2-->
+        <div class="hidden md:flex flex-col items-center bg-darkblue-700 border-t border-gray-700 pt-6 pb-4">
+            <img src="img/amazon_logo.png" alt="Amazon" class="w-20">
+            <ul class="flex flex-wrap justify-center text-xs pt-4 w-3/4 text-gray-400">
+                <li class="footer-pais"><a href="#">Austrália</a></li>
+                <li class="footer-pais"><a href="#">Alemanha</a></li>
+                <li class="footer-pais"><a href="#">Canadá</a></li>
+                <li class="footer-pais"><a href="#">China</a></li>
+                <li class="footer-pais"><a href="#">Cingapura</a></li>
+                <li class="footer-pais"><a href="#">Espanha</a></li>
+                <li class="footer-pais"><a href="#">Estados Unidos</a></li>
+                <li class="footer-pais"><a href="#">França</a></li>
+                <li class="footer-pais"><a href="#">Holanda</a></li>
+                <li class="footer-pais"><a href="#">Índia</a></li>
+                <li class="footer-pais"><a href="#">Itália</a></li>
+                <li class="footer-pais"><a href="#">Japão</a></li>
+                <li class="footer-pais"><a href="#">México</a></li>
+                <li class="footer-pais"><a href="#">Polônia</a></li>
+                <li class="footer-pais"><a href="#">Emirados Árabes Unidos</a></li>
+                <li class="footer-pais"><a href="#">Reino Unido</a></li>
+                <li class="footer-pais"><a href="#">Turquia</a></li>                               
+            </ul>
+            <div class="flex flex-wrap w-40 items-start pt-2">
+                <p class="text-xs pl-1">E não se esqueça:</p>
+                <a href="#" class=" text-xs text-gray-200 hover:underline">Amazon Web Services</a>
+            </div>
+        </div>
+
+        <div class="hidden md:flex flex-col items-center bg-darkblue-900 pt-1 pb-4">
+            <ul class="flex flex-wrap justify-center text-xs w-3/4 text-gray-400">
+                <li class="footer-pais"><a href="#">Condições de Uso</a></li>
+                <li class="footer-pais"><a href="#">Notificação de Privacidade</a></li>
+                <li class="footer-pais"><a href="#">Cookies</a></li>
+                <li class="footer-pais"><a href="#">Anúncios Baseados em Interesses</a></li>
+            </ul>
+                <p class="text-xs pl-1 mt-10 flex flex-row">© 2021-2024 Amazon.com, Inc. ou suas afiliadas</p>
+
+                <p class="text-xs pl-1 mt-10 flex flex-row">Amazon Serviços de Varejo do Brasil Ltda. | CNPJ 15.436.940/0001-03</p>
+
+                <p class="text-xs pl-1 mt-10 flex flex-row">Av. Juscelino Kubitschek, 2041, Torre E, 18° andar - São Paulo CEP: 04543-011| <a href="" class="text-xs text-gray-200 hover:underline"> Fale conosco </a>| ajuda-amazon@amazon.com.br</p>
+
+                <p class="text-xs pl-1 mt-10 flex flex-row">Formas de pagamento aceitas: cartões de crédito (Visa, MasterCard, Elo e American Express), cartões de débito (Visa e Elo), Boleto e Pix.</p>
+            
+        </div>
+        
+
+    </footer>
     
 </body>
 </html>
